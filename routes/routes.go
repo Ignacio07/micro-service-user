@@ -20,7 +20,7 @@ func Setup(app *fiber.App) {
 	app.Post("/r", controllers.CreateRegisterBuy)
 
 	//Login routes
-	//app.Post("/login", controllers.Login)
-	//app.Post("/singup", controllers.SingUp)
+	app.Post("/login", controllers.Login)
+	app.Post("/singup", controllers.SingUp)
 
 }
